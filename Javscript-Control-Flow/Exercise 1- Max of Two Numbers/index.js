@@ -132,66 +132,6 @@
 
 
 
-const output = fizzBuzz(50);
-console.log(output);
-
-function  fizzBuzz(input){
-  if (typeof input !== 'number')
-    return 'NaN';
-  if (input % 3 === 0 && input % 5 === 0)
-    return 'FizzBuzz'
-  if (input % 3 === 0)
-    return 'Fizz';
-  if (input % 5 === 0)
-    return 'Buzz';
-  return input;
-
-}
-
-const marks = [80, 80, 50];
-
-console.log(calculateGrade(marks));
-
-function calculateGrade(marks) {
-  let sum = 0;
-  for (let mark of marks)
-    sum += mark;
-  let average = sum / marks.lenght;
-
-  if (average < 60) return 'F';
-  if (average < 70) return 'D';
-  if (average < 80) return 'C';
-  if (average < 90) return 'D';
-  return 'A';
-}
-// function calculateGrade(marks) {
-//   let sum = 0;
-
-//   for (let mark of marks) {
-//       sum += mark;
-//   }
-  
-//   let average = sum / marks.length;
-//   let grade = null;
-
-//   if (average < 60) {
-//       grade = "F";
-//   } else if (average < 70) {
-//       grade = "D";
-//   } else if (average < 80) {
-//       grade = "C";
-//   } else if (average < 90) {
-//       grade = "B";
-//   } else {
-//       grade = "A";
-//   }
-
-//   return grade;
-// }
-
-// const marks = [80, 80, 50];
-
-// console.log(calculateGrade(marks));
 
 
 
@@ -228,32 +168,97 @@ function calculateGrade(marks) {
 
 
 
+// const movie = {
+//   director: 'a',
+//   movieName : 'b',
+//   releaseYear: 2026,
+//   movieLenght: 2.5,
+//   bestActor: 'c',
+//   nextMovie: 'd'
+// };
+
+// showProperties(movie);
+
+// function showProperties(obj){
+//   for (let key in obj)
+//     if (typeof obj[key] === 'string')
+//       console.log(key, obj[key]);
+// }
+
+
+
+// const array = [1, 2, 5, 28, null, undefined, 12];
+// console.log(countTruthy(array));
+
+// function countTruthy(array) {
+//   let count = 0;
+//   for(let value of array)
+//     if(value)
+//       count++;
+// return count;    
+// }
 
 
 
 
 
+// const movie = {
+//   director: 'a',
+//   movieName : 'b',
+//   releaseYear: 2026,
+//   movieLenght: 2.5,
+//   bestActor: 'c',
+//   nextMovie: 'd'
+// };
+
+// showProperties(movie);
+
+// function showProperties(obj){
+//   for (let key in obj)
+//     if (typeof obj[key] === 'string')
+//     console.log(key, obj[key]);
+    
+// }
 
 
 
 
+const array = [1, 2, 5, 28, null, undefined, 12];
+console.log(countTruthy(array));
 
 
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array)
+    if (value)
+      count++;
+  return (count);
+}
 
+const movie = {
+  director: 'a',
+  movieName : 'b',
+  releaseYear: 2026,
+  movieLenght: 2.5,
+  bestActor: 'c',
+  nextMovie: 'd'
+};
 
+showProperties(movie);
 
+function showProperties(obj) {
+  let count = 0;
+  for (let key in obj)
+    if (typeof obj[key] === 'string')
+      count++;
+  console.log(count);  
+}
 
+showNumbers(10);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+function showNumbers(limit) {
+  for (let i = 0; i <= limit; i++){
+  const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+    console.log(i, message)
+  }
+}
