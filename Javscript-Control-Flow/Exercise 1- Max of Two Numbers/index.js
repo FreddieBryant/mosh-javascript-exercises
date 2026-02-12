@@ -139,13 +139,12 @@ showNumbers(10);
 // Hint message 
 
 function showNumbers(limit) {
-  for (let i = 0; i <= limit; i++) {
-    const message =  (i % 2 === 0) ? 'Even' :'Odd';
+  for (let i = 0; i <= limit; i++){
+    let message = (i % 2 === 0) ? 'Even' : 'Odd';
     console.log(i, message);
- }
-  
-
+  }
 }
+
 
 
 const movie = {
@@ -209,8 +208,7 @@ console.log(calculateGrade(array));
 // Make two seperate functions
 
 function calculateGrade(marks) {
-  let average =calculateAverage(marks);
-
+  let average = calculateAverage(marks);
   if (average < 60) return 'F';
   if (average < 70) return 'D';
   if (average < 80) return 'C';
@@ -220,9 +218,9 @@ function calculateGrade(marks) {
 
 function calculateAverage(number) {
   let sum = 0;
-  for (let value of array)
+  for (let value of array) {
     sum += value;
-  
+  }
   return sum / array.length;
 }
  
@@ -250,15 +248,16 @@ showPrimes(10);
 // Show all prime numbers until limit
 
 function showPrimes(limit) {
-  for (let number = 2; number <= limit; number++)
+  for (let number = 2; number <= limit; number++) 
     if (isPrime(number)) console.log(number);
 }
 
 function isPrime(number) {
-    for (let factor = 2; factor < number; factor++)
-      if (number % factor === 0)  
-        return false;
+  for (let factor = 2; factor < number; factor++)
+    if (number % factor === 0)    
+      return false;
     
-    return true;
+  return true;
 }
+
  
