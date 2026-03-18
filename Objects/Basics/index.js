@@ -39,6 +39,7 @@ circle.draw();
 
 
 
+
 let radius = 1;
 let x = 1;
 let y = 1;
@@ -47,7 +48,12 @@ const circle3 = {
   radius: 1,
   location: {
     x: 1,
-    y:1
+    y: 2
   },
-  isVisible: true
-};
+  isVisible: true,
+  draw: function() {
+    console.log('draw');
+  }
+}
+circle3.draw();
+
