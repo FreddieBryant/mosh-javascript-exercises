@@ -37,3 +37,17 @@ const circle = {
 };
 circle.draw();
 
+
+
+let radius = 1;
+let x = 1;
+let y = 1;
+
+const circle3 = {
+  radius: 1,
+  location: {
+    x: 1,
+    y:1
+  },
+  isVisible: true
+};
